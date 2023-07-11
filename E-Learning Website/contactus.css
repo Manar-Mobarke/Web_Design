@@ -1,0 +1,221 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1em;
+}
+
+/* ***********Nav******** */
+nav{
+    padding: 1em 1.3em ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    /* position: fixed; */
+    /* z-index: 999; */
+    background-color: white;
+    width: 100%;
+    display: flex;
+    box-shadow: rgba(160, 156, 156, 0.459) 0px 1px 1px;
+}
+
+.logo{
+    margin: 0 1em;
+    color: black;
+    padding: 0;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+
+
+nav a{
+    text-decoration: none;
+    margin-right: 1.6em;
+    color: black;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+nav input{
+    padding: .5em 1.5em;
+    margin-right: .4em;
+    border: none;
+    border-radius: 27em;
+    font-weight: 600;
+    background-color: white;
+    color:#FFC801;
+    /* box-shadow: rgba(128, 128, 128, 0.699) 1px 1px 5px ; */
+}
+
+nav input:hover{
+    color: white;
+    background-image:repeating-linear-gradient(to right,rgba(229, 222, 21, 0.822),rgb(161, 161, 80));
+    
+}
+.li{
+    border: rgba(199, 212, 60, 0.39) solid 0.3px;
+}
+.su{
+    background-color: rgba(209, 212, 161, 0.298);
+    color:#FFC801;
+}
+/* end nav */
+
+/* ************header********* */
+header{  
+    padding-top: 1em;
+    width: 100%;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+header{
+    width: 100%;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+header div{
+    width: 30%;
+}
+header img{
+    width: 100%;
+    /* height: auto; */
+    /* margin-right: 0%; */
+    
+}
+
+#one{
+    /* padding: 2em; */
+    font-size: 1.1em;
+    /* margin: -8em -4em 0 0;  */
+}
+#one p:first-child{
+    font-size: 2.5em;
+    font-weight: 800;
+    margin: 1em 0;
+}
+span{
+    color:#FFC801;
+}
+#one p:nth-child(2){
+    margin: 0em 0 3em;
+    line-height: 1.6em;
+}
+#one input{
+    padding: .8em 1.4em;
+    border: none;
+    color: white;
+    background-color:#FFC801 ;
+    border-radius: .5em;
+    font-weight: 700;
+    font-size: 1.1em;
+    /* box-shadow: rgb(8, 102, 74) 1px 1px 12px; */
+    transition: ease-in-out .5s;
+    
+}
+#one input:hover{
+    background-image: linear-gradient(to right,#e0b414,rgb(46, 41, 2));
+    border-radius: 1em;
+    
+    transform: scale(1.1);
+    box-shadow: rgb(105, 92, 17) 0px 0px 10px;
+}
+
+/* talk to us */
+
+#talk{
+    /* background-color: rgba(128, 128, 128, 0.288); */
+    text-align: center;
+    padding: 3em 7em;
+}
+.half{
+    width: 30%;
+
+}
+form{
+    width: 60%;
+}
+#center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#talk >div{
+    width: 100%;
+}
+#talk form input[type="text"],input[type="email"]{
+    width: 47%;
+    padding: 1em;
+    border: none;
+    border-radius: 2em;
+    box-shadow: rgba(68, 65, 59, 0.61) 0 0 4px;
+    margin: 2em .2em;
+    /* border-color: rgb(59, 123, 243) 1px; */
+}
+#talk form input[type="text"],input[type="email"]:hover{
+    /* box-shadow: rgb(34, 34, 53) 0 0 7px; */
+    border-radius: 2em;
+    border-color: rgb(59, 123, 243);
+}
+textarea{
+    width: 100%;
+    border-radius: 2em;
+    border: none;
+    padding: 1.5em;
+    box-shadow: rgba(68, 65, 59, 0.61) 0 0 4px;
+    margin: 2em .5em;
+}
+#talk input[type="submit"]{
+    color: white;
+    background-color:#4C4C6D; 
+    border: none;
+    border-radius: 2em;
+    padding: 1em;
+    /* transition: ease-in-out 2s; */
+}
+#talk p{
+    margin: 2em 0;
+    color: #4C4C6D;
+}
+#talk h3, #talk h2{
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+#talk input[type="submit"]:hover{
+    /* transform: translate(1em); */
+    /* padding: 1.5em; */
+    box-shadow: #FFC801 0 0 5px;
+    background-color: #FFC801;
+
+}
+
+
+
+/* foooter */
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 3em;
+    background-color:  #FFC801;
+    color: white;
+}
+footer p{
+    margin: 1em;
+}
+#icons{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+#icons img{
+    width: 30px;
+    height: 30px;
+    padding: .1em;
+    margin-left: 1em;
+    margin-bottom: 3em;
+}
