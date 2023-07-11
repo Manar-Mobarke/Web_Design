@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+body ::selection{
+    background-color: rgb(224, 88, 156);
+    color: white;
+}
+header{
+    background-image: url(./imgs/banner-bg.png) ;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    /* display: flex; */
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    padding: 3rem;
+}
+nav{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 1.5% 3%;
+    width: 91vw;
+    border-radius: 10em;
+}
+nav li{
+    list-style: none;
+    display: inline;
+    /* width: 100%; */
+}
+nav a{
+    text-decoration: none;
+    margin-right: 2em;
+    color: black;
+    font-size: 14px;
+}
+nav a:hover{
+    font-size: 18px;
+    transition: ease-in-out 1s;
+    color: rgba(240, 93, 166, 0.89);
+}
+
+#middle{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    margin: 9em 0 ;
+    color: white;
+    line-height: 2em;
+}
+#middle span{
+    font-weight: 800;
+}
+#middle input{
+    padding: .7em;
+    border-radius: 2em ;
+    border: none;
+    box-shadow: 0 6px 8px rgb(65, 6, 83);
+    background-image: linear-gradient(120deg, pink, rgb(105, 29, 67));
+    color: papayawhip;
+    margin-top: 1em;
+    
+}
+#middle input:hover{
+    background-image: linear-gradient(120deg, rgb(199, 181, 184), rgb(113, 156, 163));
+    transition: ease-in-out 2s;
+    
+}
+#middle input:active{
+    background-color: darkorchid;
+    color: rgb(175, 150, 142);
+    transform: scale(2);
+}
+/* #middle p{
+    font-size: 10px;
+    line-height: 2em;
+} */
+.x{
+    font-size: 30px;
+    line-height: 1.7em;
+}
+#parent{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -5em;
+}
+.child{
+    width: 30%;
+    height: 18em;
+    background-color: white;
+    border-radius: 1.7em;
+    text-align: center;
+    padding: 2em;
+    box-shadow: 1px 1px 8px lightslategray;
+    font-size: 1.5em;
+    transition: ease-in-out 1s;
+}
+.child img{
+    /* color: darkviolet; */
+    background-color: rgb(133, 90, 214);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 10px 8px 10px;
+    transition: all 2s;
+}
+.child h2{
+    margin: 1.2em;
+    font-weight: 500;
+}
+.child p{
+    color: rgba(0, 0, 0, 0.521);
+}
+.child img:hover{
+    background-color: rgb(236, 109, 128);
+    transform: rotate(720deg);
+    border-radius: 35%;
+}
+.child:hover{
+    background-image: linear-gradient(180deg,rgba(231, 209, 214, 0.87), rgba(101, 133, 221, 0.808), rgb(88, 88, 145));
+    background-blend-mode: overlay .5;
+    color: lightyellow;
+    background-position: center;
+    transform: translate(1em);
+    border-radius: 40px;
+}
+.child p:hover{
+    color: white;
+}
+section{
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    padding: 65em 0em 3em;
+    margin: 0 4em;
+    line-height: 1.8em;
+    
+}
+section >div{
+    width: 40%;
+}
+section h2{
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+section p{
+    color: rgba(0, 0, 0, 0.514);
+}
+#two{
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 0 0;
+    margin: 0 4em;
+    line-height: 1.8em;
+    border-top: rgba(32, 32, 32, 0.205) 1px solid;
+    padding-bottom: 5em;
+    
+}
+
+#two >div{
+    width: 40%;
+}
+
+#two h2{
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+#two p{
+    color: rgba(0, 0, 0, 0.514);
+}
+#bg{
+    background-image: url(./imgs/work-process-bg.png);
+    background-position: cover center;
+    min-width: 100%;
+    min-height: 100%;
+    color: white;
+    padding: 5em 5em 0;
+    /* position: absolute; */
+    text-align: center;
+}
+#bg p{
+    margin: 1em 0;
+    font-size: .9em;
+}
+#bg >div{
+    display: flex;
+    justify-content: space-between;
+    padding: 6em 0;
+}
+#bg h2{
+    font-size: 1.5em;
+    padding: 1.3em;
+}
+#bg h2:hover{
+    color: rgb(184, 190, 202);
+}
+.rocket{
+    width: 8em;
+    height: 10em;
+    background-color: white;
+    color: black;
+    border-radius: 1.5em;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 1em 8px 5px rgba(92, 78, 105, 0.555);
+    line-height: 1em;
+    color: rgba(0, 0, 0, 0.534);
+}
+.rocket img{
+    padding-bottom: 1em;
+}
+.rocket:hover{
+    color: black;
+    transform: scale(1.2);
+}
+#three {
+    text-align: center;
+    padding: 5em;
+    line-height: 2em;
+}
+#three div{
+    margin: 2em 0;
+}
+#three div h2{
+    margin: 1.6em 0;
+    font-size: 1.5em;
+}
+#p{
+    display: flex;
+    justify-content: space-between;
+}
+.c{
+    width: 30%;
+    height: 22em;
+    border-radius: 1em;
+    padding: 1.7em;
+    box-shadow: rgba(0, 0, 0, 0.438) 0px 0px 6px;
+}
+.c > p{
+    margin: 30px 0 0;
+}
+.d{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.d p{
+    color: rgb(214, 119, 167);
+}
+.gray{
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(136, 133, 133, 0.767);
+}
+.left{
+    /* transition: ease-in-out 3s; */
+}
+.left:hover{
+    transform: translateX(-15px);
+}
+#price{
+    text-align: center;
+    background-color: rgba(211, 214, 218, 0.644);
+}
+#price .pricing{
+    padding: 2em 0;
+    /* width: 40%; */
+    line-height: 3em;
+    
+}
+
+span img{
+    width: 25px;
+    height: 30px;
+}
+#price #par{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 8em;
+}
+.ch{
+    width: 30%;
+    height: auto;
+    border-radius: 1.5em;
+    box-shadow: rgba(0, 0, 0, 0.527) 0 0 5px;
+    padding: 2em;
+    background-color: white;
+}
+.line{
+    display: block;
+    text-decoration: line-through;
+    /* font-size: .5em; */
+}
+.s{
+    padding: 2em 1.5em;
+    line-height: 2em;
+    background-color: rgb(144, 125, 211);
+    color: rgb(252, 248, 248);
+    border-radius: 1.3em;
+    margin: 1.3em 0;
+}
+.ch span{
+    /* font-size: 1.3em; */
+}
+.ch img{
+    /* background-color: white; */
+}
+.ch h3{
+    font-weight: 500;
+    transition: ease-in-out 2s;
+    font-size: 1.3em;
+}
+.ch h3:hover{
+    font-size: 1.6em;
+    letter-spacing: 1px;
+}
+#price p,.ch p, .ch span{
+    color: rgba(0, 0, 0, 0.514);
+}
+.ch input{
+    margin: 1.1em 0 0;
+    padding: .7em;
+    border-radius: 2em;
+    border: none;
+    color: white;
+    background-color: rgb(122, 94, 223);
+    box-shadow: rgba(52, 59, 59, 0.692) 0 0 7px;
+}
+.ch input:hover{
+    background-color: rgb(233, 56, 124);
+}
+.s{
+    color: white;
+}
+.s span{
+    color: white;
+    font-size: 1.5em;
+    
+}
+#price .s p{
+    color: rgb(241, 240, 240);
+    font-size: 1.5em;
+}
+#price .s:hover{
+    transform: scale(.9);
+}
+.ch:nth-child(2) .s{
+    background-color: rgb(233, 56, 124);
+}
+#circle{
+    background-image: url(./imgs/fun-facts-bg.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 10% 3em; 
+    /* position: absolute; */
+}
+#circle div{
+    text-align: center;
+    line-height: 2em;
+}
+#circle div:hover{
+    transform: translatey(-10px);
+}
+#circle h3{
+    font-size: 24px;
+}
+#circle div span{
+    font-size: 30px;
+}
+#blog{
+    text-align: center;
+    padding: 2em 2em 0;
+    margin: 2em;
+    line-height: 2em;
+    font-size: 1.1em;
+}
+#blog h2{
+    margin-bottom: 2em;
+}
+#blog p{
+    color: rgba(0, 0, 0, 0.637);
+}
+#x{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    justify-content: space-between;
+    position: relative;
+    padding: 6em 2em;
+    
+}
+.y{
+    width: 19em;
+    padding: 2em 1em;
+    border-radius: 1em;
+    transition: ease-in-out 1s;
+}
+.y:hover{
+    background-image: url(./imgs/6\ Flat\ Background\ Design\ Landing\ Page\ PNG\ SVG\ and\ Adobe\ XD\ Cool.jpg);
+    box-shadow: rgba(0, 0, 0, 0.74) 0 0 4px;
+    color:white;
+    height: 32em;
+    background-size: cover;
+    background-position: right;
+}
+#blog .y p:hover {
+    color: white;
+}
+.y img{
+    width: 16em;
+}
+.y img:hover{
+    transform: scale(1.1);
+}
+.y h3{
+    font-size: 1.1em;
+    margin: 1em 0;
+}
+.y input{
+    padding: .9em;
+    border: none;
+    color: white;
+    margin-top: 1.2em;
+    border-radius: 2em;
+    background-color: rgb(122, 94, 223);
+    box-shadow: rgba(75, 29, 105, 0.76) 0 0px 5px;
+    /* background-image: linear-gradient(90deg, rgb(189, 9, 212),rgb(62, 30, 71) ); */
+    transition: ease-in-out 2s;
+}
+.y input:hover{
+    background-image: linear-gradient(90deg, rgb(189, 9, 212),rgb(99, 24, 95) );
+    transform: rotate(360deg);
+}
+#talk{
+    background-color: rgba(128, 128, 128, 0.288);
+    text-align: center;
+    padding: 3em 7em;
+}
+.half{
+    width: 30%;
+
+}
+form{
+    width: 60%;
+}
+#center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#talk >div{
+    width: 100%;
+}
+#talk form input[type="text"],input[type="email"]{
+    width: 47%;
+    padding: 1em;
+    border: none;
+    border-radius: 2em;
+    box-shadow: rgba(68, 65, 59, 0.61) 0 0 4px;
+    margin: 2em .2em;
+    /* border-color: rgb(59, 123, 243) 1px; */
+}
+#talk form input[type="text"],input[type="email"]:hover{
+    /* box-shadow: rgb(34, 34, 53) 0 0 7px; */
+    border-radius: 2em;
+    border-color: rgb(59, 123, 243);
+}
+textarea{
+    width: 100%;
+    border-radius: 2em;
+    border: none;
+    padding: 1.5em;
+    box-shadow: rgba(68, 65, 59, 0.61) 0 0 4px;
+    margin: 2em .5em;
+}
+#talk input[type="submit"]{
+    color: white;
+    background-color:rgb(95, 63, 211); 
+    border: none;
+    border-radius: 2em;
+    padding: 1em;
+    transition: ease-in-out 2s;
+}
+#talk p{
+    margin: 2em 0;
+    color: rgba(100, 86, 160, 0.808);
+}
+#talk h3, #talk h2{
+    font-weight: 500;
+    font-size: 1.1em;
+}
+#talk input[type="submit"]:hover{
+    transform: translate(1em);
+    padding: 1.5em;
+    box-shadow: rgb(58, 35, 58) 0 0 5px;
+    background-color: teal;
+
+}
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 3em;
+    background-color:  rgb(95, 76, 163);
+    color: white;
+}
+footer p{
+    margin: 1em;
+}
+#icons{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+#icons img{
+    width: 30px;
+    height: 30px;
+    padding: .1em;
+    margin-left: 1em;
+    margin-bottom: 3em;
+}
+
